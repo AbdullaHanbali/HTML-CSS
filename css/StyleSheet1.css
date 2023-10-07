@@ -1,0 +1,1073 @@
+﻿body
+{
+}
+
+
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+.home .container
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.4);
+}
+
+
+.header
+{
+    position:fixed;
+    width:100%;
+    height:60px;
+    background-color:black;
+    z-index:10;
+}
+
+
+.logo
+{
+  float:left;
+  margin-left:80px;
+}
+
+
+nav ul 
+{
+    float:right;
+    margin-right:80px;
+}
+
+
+nav ul li
+{
+    display:inline-block;
+    padding:19px;
+}
+
+
+nav ul li a
+{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+.Aline {
+    display: block;
+    width: 46px;
+    height: 4px;
+    background-color: red;
+    margin: -3px auto 50px auto;
+}
+
+
+.header .list a::after
+{
+    content: '';
+    background-color: red;
+    height: 3px;
+    width: 0;
+    margin: auto;
+    display: block;
+    transition: 0.3s;
+}
+
+
+ .header .list a:hover::after
+{
+    width: 100%;
+    transition:width 0.3s linear;
+}
+
+
+.home .home-content
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 65%;
+}
+
+
+.home .home-content .homeH
+{
+    color: white;
+    font-size: 55px;
+    text-transform: uppercase;
+
+}
+
+
+.home .home-content .homeP 
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+     letter-spacing:3px;
+    line-height: 1.6px;
+    font-size:18px;
+}
+
+
+.home
+{
+    width:100%;
+    height:100vh;
+    background-image:url(../images/home.jpg);
+    background-size:cover;
+    background-position:center;
+    padding:10px 8%;
+    
+}
+
+
+.home .home-content .btn 
+{
+    min-width: 150px;
+    padding: 15px 0;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top:15px;
+}
+
+
+.btn-learn
+{
+    background-color: black;
+    color: cornsilk;
+    margin-left:8px;
+}
+
+
+.hover-opacity:hover
+{
+    opacity:0.5;
+}
+
+
+.background
+{
+    background-image:url(images/logo.png);
+    width:100%;
+    height:100vh;
+    background-size:cover;
+    background-position:center;
+    padding:10px 8%;
+}
+
+
+.pd-y
+{
+    padding:120px 0;
+}
+
+.aboutH 
+{
+    color: black;
+    font-size: 35px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top:60px;
+}
+
+.container 
+{
+    width: 80%;
+    margin: auto;
+}
+
+
+.about-content 
+{
+   display:flex;
+   align-content:center;
+   justify-content:center;
+}
+
+
+.about-item 
+{
+    text-align: center;
+    align-items: center;
+    margin: 30px;
+    width: 24%;
+    border: 1px solid #888;
+    padding: 22px 1px;
+    position:relative;
+}
+
+
+.about-item .about-item-title
+ {
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    transition: color .5s;
+ }
+
+
+
+.about-item a i
+{
+    font-size:40px;
+    color: red;
+    margin-bottom: 10px;
+    transition: color .5s;
+}
+
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+
+p 
+{
+    color: #616161;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    letter-spacing: 3px;
+    transition: color .5s;
+}
+
+
+.about-item-link
+{
+    color: red;
+    text-transform: capitalize;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color .5s;
+}
+
+    
+.about-item:after
+{
+   position: absolute;
+   content: "";
+   width: 0;
+   height: 0;
+   top: 0;
+   left: 0;
+   background-color: black;
+   transition: 1s;
+}
+
+
+ .about-item:hover::after
+ {
+     background-color:black;
+     width:100%;
+     height:100%;
+     z-index:-1;
+ }
+
+
+ .about-item .about-item-title:after
+ {
+     color:white;
+ }
+
+
+ .about-item:hover .about-item-title
+ {
+     color:white;
+ }
+
+
+ .about-item p:after
+ {
+     color:#e0dddd;
+ }
+
+
+ .about-item:hover p
+ {
+     color:#e0dddd;
+ }
+
+ .portfolio
+ {
+     background-color:#e0dddd;
+ }
+
+
+.portfolioH {
+    color: black;
+    font-size: 35px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.portfolio-item {
+    width: 28%;
+    position: relative;
+    margin: 20px;
+    padding: 15px;
+}
+
+
+.portfolio-content 
+{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+
+.portfolio-item img
+{
+    width:100%;
+    height:100%;
+}
+
+
+.layer-content .layer-info
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 80%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+
+.portfolio-item .layer-content 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgba(0,0,0,0.7);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s;
+}
+
+
+.layer-content-title
+{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+    position: relative;
+    top: 15px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top 1s ,opacity .5s;
+    transition-delay: .4s;
+}
+
+
+.layer-content .category 
+{
+    color: red;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 5px;
+    position: relative;
+    top: 15px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top 1s ,opacity .5s;
+    transition-delay: 0;
+}
+
+
+
+.layer-content a 
+{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color:dimgrey;
+    position: relative;
+    top: 15px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top 1s,opacity .5s;
+    transition-delay: .6s;
+}
+
+
+.fa-lg
+{
+    font-size: 1.33333333em;
+    line-height: .75em;
+    vertical-align: -15%;
+}
+
+.layer-content a i
+{
+    line-height: 40px;
+    color:red;
+}
+
+
+.layer-content .layer-info {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 80%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+
+.portfolio-item:hover .layer-content 
+{
+    opacity: 1;
+    visibility: visible;
+}
+
+.portfolio-item:hover .layer-content-title, .portfolio-item:hover .layer-content a, .portfolio-item:hover .layer-content .category 
+{
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.offerH
+{
+    color: black;
+    font-size: 35px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top:80px;
+
+}
+
+.offer-content 
+{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.offer-item 
+{
+    width: 30%;
+    margin:20px;
+    margin-bottom: 20px;
+    border: 1px solid #a8a8a8;
+    padding: 30px 15px 30px 70px;
+    position: relative;
+}
+
+
+.offer-item .offer-item-title
+ {
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    transition: 1s;
+ }
+
+.offer-item .icon
+{
+    position: absolute;
+    left: 18px;
+    top: 50px;
+    color: red;
+}
+
+.offer p
+{
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #999;
+}
+
+.offer-item:after
+{
+   position: absolute;
+   content: "";
+   width: 0;
+   height: 0;
+   top: 0;
+   left: 0;
+   background-color: black;
+   transition: 1s;
+}
+
+
+ .offer-item:hover::after
+ {
+     background-color:black;
+     width:100%;
+     height:100%;
+     z-index:-1;
+ }
+
+
+ .offer-item .offer-item-title:after
+ {
+     color:white;
+ }
+
+
+ .offer-item:hover .offer-item-title
+ {
+     color:white;
+ }
+
+
+.service 
+{
+    background-color: #f9f9f9;
+    margin-top: 60px;
+}
+
+.service-content
+{
+     display:flex;
+     justify-content:center;
+}
+
+
+.service-item 
+{
+    width:50%;
+    float:left;
+    margin:40px;
+}
+
+.service-item .section-header 
+{
+    text-align: left;
+}
+
+
+.section-header .section-title 
+{
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-bottom: 9px;
+    margin-top: 6px;
+}
+
+
+.service-item .section-header .line 
+{
+    margin: 0 0 45px 0;
+}
+
+
+.service-item-desc
+{
+    padding-right: 20px;
+    color: #999;
+    line-height: 1.4;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+
+.service-list 
+{
+    list-style: none;
+}
+
+
+.service-list li 
+{
+    margin-bottom: 13px;
+    color: #999;
+}
+
+
+.service-list li i 
+{
+    border: 1px solid black;
+    color: red;
+    padding: 1px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+
+.service-item-img img
+{
+    width: 480px;
+    height: 400px;
+}
+
+
+.service-bullets 
+{
+    list-style: none;
+    text-align: center;
+}
+
+.service-bullets li.active 
+{
+    background-color: red;
+}
+
+
+.service-bullets li
+{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color: #a8a8a8;
+    margin: 10px 5px;
+    border-radius: 50%;
+}
+
+
+.numbers 
+{
+    position: relative;
+    background-image:url(../images/numbers.jfif);
+    height: 350px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.overlay 
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+}
+
+
+.numbers-content
+{
+    display:flex;
+    justify-content:center;
+}
+
+
+.numbers-items
+{
+    padding-top:130px;
+    width: 25%;
+    text-align: center;
+}
+
+.numbers-items i
+{
+    color: red;
+    margin-bottom: 15px;
+}
+
+
+.number-item-title 
+{
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+}
+
+
+.number-item-text
+{
+    text-transform: capitalize;
+    color: #fff;
+}
+
+
+.section-header 
+{
+    margin-top:60px;
+    text-align: center;
+}
+
+
+.section-header .line 
+{
+    display: block;
+    width: 62px;
+    height: 4px;
+    background-color: red;
+    margin: 0 auto 40px auto;
+}
+
+.section-header .section-title 
+{
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    margin-top: 9px;
+}
+
+.pricing 
+{
+    background-color: #e8e8e8;
+}
+
+
+.pricing-items {
+    position: relative;
+    width: 30%;
+    padding: 30px 15px;
+    border: 1px solid #a8a8a8;
+    text-align: center;
+    margin: 30px;
+}
+
+
+.pricing-text 
+{
+    text-transform: uppercase;
+    font-size: 17px;
+    color: #999;
+}
+
+
+.price
+{
+    width: 100px;
+    height: 100px;
+    padding: 12px 0;
+    margin: 20px auto;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+
+.doller 
+{
+    font-size: 50px;
+}
+
+
+.month
+{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+.pricing-list
+{
+    list-style: none;
+}
+
+
+
+.pricing-table-content
+{
+    margin-top:50px;
+    display:flex;
+    justify-content:center;
+}
+
+
+.pricing-list li 
+{
+    color: #999;
+    line-height: 1.8;
+}
+
+
+.pricing-item-purchase {
+    border: 2px solid black;
+    margin: auto;
+    padding: 8px;
+    background-color: #e8e8e8;
+    display: block;
+    width: 120px;
+    margin-top: 15px;
+    transition: color .5s;
+}
+
+
+.pricing-items:after 
+{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: #0b0c0c;
+    transition: .5s;
+    opacity: .5;
+}
+
+
+.pricing-items:hover:after
+{
+    width: 100%;
+    height: 100%;
+}
+
+
+.pricing-items .price:after 
+{
+    color: red;
+}
+
+
+.pricing-items:hover .price 
+{
+    color: red;
+}
+
+.pricing-items .pricing-text:after
+{
+    color: red;
+}
+
+
+.pricing-items:hover .pricing-text
+{
+    color: red;
+}
+
+
+.pricing-items .pricing-list li:after
+{
+    color: red;
+}
+
+
+.pricing-items:hover .pricing-list li 
+{
+    color: red;
+}
+
+.pricing-items:hover .pricing-item-purchase
+{
+    color:red;
+}
+
+
+.team-item 
+{
+    display: block;
+    width: 22%;
+    background-color: #d1caca;
+    padding: 17px 13px;
+    text-align: center;
+    position: relative;
+    margin: 40px;
+}
+
+.team-img
+{
+    width:90%;
+    margin:auto;
+    position:relative;
+}
+
+.team-img img
+{
+    width:100%;
+}
+
+
+.team-content 
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+.team-info-title 
+{
+    text-transform:capitalize;
+    color: #222;
+    padding: 10px 0;
+}
+
+
+.team-info-text
+{
+    color: #999;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+
+.team-item:hover:after 
+{
+    width: 100%;
+    height: 100%;
+    opacity: .4;
+    transition: 1s;
+}
+
+
+.team-item:after
+{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    opacity: 0;
+}
+
+
+.team-item:hover .team-info-title 
+{
+    color: #fff;
+    transition: .5s;
+}
+
+
+.team-item:hover .team-info-text 
+{
+    color: red;
+    transition: 1s;
+}
+
+
+.team-overlay
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+.team-overlay a 
+{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    color: #fff;
+    margin-left: auto;
+}
+
+.team-overlay a i
+{
+    line-height: 40px;
+}
+
+
+.team-item:hover .team-overlay
+{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.footer
+{
+    background-color:black;
+    text-align: center;
+    height: 300px;
+    padding: 0 8px;
+}
+
+
+.footer-links 
+{
+    list-style: none;
+    margin: 20px 0;
+}
+
+.footer-links li:hover:after
+{
+    opacity: .7;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+
+.footer-links li:after 
+{
+    position: absolute;
+    content: "";
+    opacity: 0;
+    transition: .3s;
+    background-color:#911111;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0%;
+    bottom: 0;
+}
+
+.footer-links li
+{
+    display: inline-block;
+    background-color:red;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    z-index: 1;
+    border-radius: 50%;
+    margin:11px;
+}
+
+
+.footer-links li a 
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #6195ff;
+    color: black;
+    line-height: 50px;
+    padding-top: 2px;
+    padding-right: 16px;
+    font-size: 23px;
+    margin: 0 8px;
+}
+
+
+.footer p
+{
+    color: #999;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+
+.fimage
+{
+    width:180px;
+    height:100px;
+    margin-top:20px;
+}
